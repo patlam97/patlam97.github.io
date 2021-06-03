@@ -376,23 +376,28 @@
                   window.alert(p5);
           } 
       </script>
-      <!--Js project ends-->
-    
+      <!--Element that excute functions -->
       <button class="btn btn-primary" onclick ="add()">ADD TWO NUMBERS</button> 
       <button class="btn btn-primary" onclick ="multiply()">First Num > 2nd Num MULTIPLY else DIVIDE</button> 
+      <button class="btn btn-primary" onclick ="loop()">Multiply number by itself</button> 
       <script>
         function add(){
+
           var a = +prompt("Enter first number");
           var b = +prompt("Enter second number");
           alert(a+b);
         }       
       </script>
       <script>
-        function multiply(){
+        //Function
+      function multiply(){
         var c = +prompt("Enter first number");
         var d = +prompt("Enter second number");
+
+        //Array
         var num = [c,d];
-      
+
+        //conditional logic
         if(num[0]>num[1]){
           alert((num[0]*num[1]));
       
@@ -402,8 +407,24 @@
       }
       </script>
 
+      <script>
+        function loop(){
+          var a = +prompt("Enter a number");
+          var b = +prompt("How many times to multiply by itself?");
+          var i;
+          var c = 0;
+          //for loop function
+          for(i = 0; i < b; i){
+            a *= a;
+          }
+          alert(a);
+
+        }
+      </script>
+
     </div>
   </nav>
+   <!--Js project ends-->
         
 </body>
 
