@@ -4,7 +4,7 @@
         .box {
             background-color: rgb(120, 110, 255);
             height: 500px;
-            width: 500px;
+            width: 600px;
             position: relative;
             animation-name: colorchange;
             animation-duration: 5s;
@@ -15,6 +15,22 @@
             height:50px;
         }
 
+        .sonic{
+            width: 50px;
+            height: 50px;
+            animation-name: movement;
+            animation-duration: 3s;
+            animation-iteration-count: 10;
+        }
+        .octopus{
+            width:50px;
+            height: 50px;
+            animation-name: movement;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            animation-iteration-count: 3;
+
+        }
         .box:hover .character{
             animation-name: movement;
             animation-duration: 5s;
@@ -31,6 +47,7 @@
             100% {transform:translate(0, 0px);}
         }
 
+
         @keyframes colorchange{
             0%{background-color:rgb(255, 110, 110)}
             25%{background-color:rgb(168, 255, 110)}
@@ -42,6 +59,8 @@
     <body>
         <div class= "box">
             <img class="character" src="https://media.giphy.com/media/27wc7vMWPvvJC/giphy.gif"/>
+            <img class="sonic" src="https://media.giphy.com/media/jBvHCY91NcurK/giphy.gif">
+            <img class="octopus" src="https://media.giphy.com/media/w79zyDjU12AhD4w12J/giphy.gif">
         </div>
 
 
