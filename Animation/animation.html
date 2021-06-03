@@ -2,10 +2,11 @@
 <html>
     <style>
         .box {
-            background-color: rgb(77, 184, 255);
             height: 500px;
             width: 500px;
             position: relative;
+            animation-name: colorchange;
+            animation-duration: 5s;
         }
         .character{
             width: 50px;
@@ -28,12 +29,20 @@
             100% {transform:translate(0, 0px);}
         }
 
+        @keyframes colorchange{
+            0%{background-color:rgb(255, 110, 110)}
+            25%{background-color:rgb(168, 255, 110)}
+            50%{background-color:rgb(120, 110, 255)}
+            100%{background-color:rgb(255, 110, 219)}
+        }
     </style>
     <h1>Animation: hover to move</h1>
     <body>
         <div class= "box">
             <img class="character" src="https://media.giphy.com/media/27wc7vMWPvvJC/giphy.gif"/>
         </div>
+
+
     </body>
     
 </html>
