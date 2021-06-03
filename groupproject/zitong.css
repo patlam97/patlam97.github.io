@@ -1,0 +1,17 @@
+
+p{
+color:green;
+}
+/*this p element is pointing to my zitong.html*/
+
+p.fristp{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: x-large;color:green;
+}
+
+#Washington {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tablecell{
+width: 25%;
+}
