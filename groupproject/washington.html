@@ -374,13 +374,36 @@
           function myFunction(p5) {
   
                   window.alert(p5);
-          }
-  
-         
+          } 
       </script>
       <!--Js project ends-->
     
+      <button class="btn btn-primary" onclick ="add()">ADD TWO NUMBERS</button> 
+      <button class="btn btn-primary" onclick ="multiply()">First Num > 2nd Num MULTIPLY else DIVIDE</button> 
+      <script>
+        function add(){
+          var a = +prompt("Enter first number");
+          var b = +prompt("Enter second number");
+          alert(a+b);
+        }       
+      </script>
+      <script>
+        function multiply(){
+        var c = +prompt("Enter first number");
+        var d = +prompt("Enter second number");
+        var num = [c,d];
+      
+        if(num[0]>num[1]){
+          alert((num[0]*num[1]));
+      
+        }else{
+          alert((num[1]/num[0]));
+        }
+      }
+      </script>
 
+    </div>
+  </nav>
         
 </body>
 
